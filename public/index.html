@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA SPACE APPS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <p>Click anywhere on the map to obtain temporal profile charts for that location.</p>
+            <div class="input-catch">
+                <div class="row">
+                    <h2>Year</h2>
+                    <div>
+                        <input id="checkbox" type="checkbox" class="checkbox" />
+                      
+                        <label for="checkbox" class="switch">
+                          <span class="switch__circle">
+                            <span class="switch__circle-inner"></span>
+                          </span>
+                          <span class="switch__left">Off</span>
+                          <span class="switch__right">On</span>
+                        </label>
+                      </div>
+                </div>
+                <input type="range" min="1993" max="2100" value="0" class="range blue"/>
+                <div class='value'><p>2022 Year</p></div>
+
+            </div>
+            <div class="input-catch">
+                <div class="row">
+                    <h2>Sea Level</h2>
+                    <div>
+                        <input id="checkbox" type="checkbox" class="checkbox" />
+                      
+                        <label for="checkbox" class="switch">
+                          <span class="switch__circle">
+                            <span class="switch__circle-inner"></span>
+                          </span>
+                          <span class="switch__left">Off</span>
+                          <span class="switch__right">On</span>
+                        </label>
+                      </div>
+                </div>
+                <input id="sea_level" type="range" min="91" max="330" value="0" class="range blue"/>
+                <div id="sea_level_text" class='value'><p>95 mm</p></div>
+
+            </div>
+            <div class="input-catch">
+                <div class="row">
+                    <h2>Carbon Dioxicide</h2>
+                    <div>
+                        <input id="checkbox" type="checkbox" class="checkbox" />
+                      
+                        <label for="checkbox" class="switch">
+                          <span class="switch__circle">
+                            <span class="switch__circle-inner"></span>
+                          </span>
+                          <span class="switch__left">Off</span>
+                          <span class="switch__right">On</span>
+                        </label>
+                      </div>
+                </div>
+                <input id="carbon_level" type="range" min="355" max="560" value="0" class="range blue"/>
+                <div id="carbon_level_text" class='value'><p>412 ppm</p></div>
+
+            </div>
+            <div class="input-catch">
+                <div class="row">
+                    <h2>Global Temperature</h2>
+                    <div>
+                        <input id="checkbox" type="checkbox" class="checkbox" />
+                      
+                        <label for="checkbox" class="switch">
+                          <span class="switch__circle">
+                            <span class="switch__circle-inner"></span>
+                          </span>
+                          <span class="switch__left">Off</span>
+                          <span class="switch__right">On</span>
+                        </label>
+                      </div>
+                </div>
+                <input id="global" type="range" min="1" max="10" value="0" class="range blue"/>
+                <div id="global_text" class='value'><p>0.8 °C</p></div>
+
+            </div>
+            <div class="input-catch">
+                <div class="row">
+                    <h2>Ice Sheets</h2>
+                    <div>
+                        <input id="checkbox" type="checkbox" class="checkbox" />
+                      
+                        <label for="checkbox" class="switch">
+                          <span class="switch__circle">
+                            <span class="switch__circle-inner"></span>
+                          </span>
+                          <span class="switch__left">Off</span>
+                          <span class="switch__right">On</span>
+                        </label>
+                      </div>
+                </div>
+                <input type="range" min="1" max="100" value="0" class="range blue"/>
+                <div class='value'><p>127 GT</p></div>
+
+            </div>
+        </div>
+        <div class="title-container">
+            <div class="title">
+                <h1 class="animate__animated animate__backInLeft">look into the future</h1>
+                <p class="animate__animated animate__backInLeft animate__delay-1s">The most reflecting feature yet to come to 
+                  Earth Data Analysis  our project will give people a wake-up call to our current issues with data visualization that were never presented before this way.</p>
+                <button class="btn animate__animated animate__backInUp animate__delay-2s animate__headShake">Let's See</button>
+            </div>
+        </div>
+    </div>
+    <canvas class="webgl"></canvas>
+    <script type="module" src="./client.js"></script>
+</body>
+
+</html>
